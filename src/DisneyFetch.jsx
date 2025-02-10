@@ -18,15 +18,15 @@ function DisneyFetch(){
     <div>
       <button
       onClick={fetchData}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer button"
+      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer button my-5 h-14 md:text-base"
       >
         Get Disney Characters
         </button>
-
-      <ul className="list-none">
+ 
+      <ul className="list-none grid w-36 ">
         {disneyRoleList.map((char)=> (
-          <li key={char._id}  className="disney-chars">
-            <img src={char.imageUrl} alt={char.name} width='150px'/>
+          <li key={char._id}  className="disney-chars .grid grid-flow-col mx-auto">
+            <img src={char.imageUrl} alt={char.name} />
             <p>{char.name}</p>
           </li>
         ))}

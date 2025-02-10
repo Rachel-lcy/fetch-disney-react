@@ -1,6 +1,6 @@
+@import "tailwindcss";
 
-
-ul {
+/* ul {
   list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -21,4 +21,4 @@ ul {
 
 .button:hover{
   background-color: #275298;
-}
+} */
